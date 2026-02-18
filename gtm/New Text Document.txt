@@ -1,0 +1,41 @@
+// wap to read two operants and  one operants and perform all logical operators using switch case
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    char op;
+    printf("enter two operants");
+    scanf("%d%d",&a,&b);
+    printf("enter the operators(+,-,*,/)\n");
+    scanf("   %c ",&op);
+    switch (op)
+    {
+        case'+':
+        printf("addition=%d",a+b);
+        break;
+
+        case'-':
+        printf("subtraction=%d",a-b);
+        break;
+
+        case'*':
+        printf("multiplication=%d",a*b);
+        break;
+
+        case'/':
+        if(b<=0)
+        printf("Division not perfrom");
+        else
+        printf("division=%d",(float)a/b);
+        break;
+        default:
+        printf("error ! incorrect operator");
+        
+
+    }
+    return 0;
+}
+
+
